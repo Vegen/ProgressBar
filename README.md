@@ -134,7 +134,7 @@ demo 效果如下
 ## 相关属性
 
 | **属性名称**  | **意义** | **类型** | **默认值** |
-| --- | ---| --- | --- | --- |
+| --- | --- | --- | --- |
 | showPattern | 进度条显示模式 percentCover（默认）：按百分比上层覆盖下层模式，percentSplice：按百分比色块接拼组合模式 | enum | percentCover |
 | progress_width | 进度宽度 | dimension | 8f |
 | start_angle | 起始角度 | integer | mShowPattern == PATTERN_PERCENT_COVER ? (int) (180 + (1 - mProgressPercent) * mSweepAngle * 2) : 0 |
