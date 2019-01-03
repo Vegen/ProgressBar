@@ -3,7 +3,7 @@
 ## 使用
 
 ```
-implementation compile 'com.vegen.open:ProgressBar:+'
+implementation 'com.vegen.open:ProgressBar:+'
 ```
 `其中 '+' 请填写版本号 Download 后的最新版本`
 
