@@ -176,13 +176,6 @@ public class ProgressBar extends View {
         postInvalidate();
     }
 
-    public void setmShowPattern(int mShowPattern) {
-        this.mShowPattern = mShowPattern;
-        invalidate();
-    }
-
-
-
     public void setSpliceAdapter(ProgressBarSpliceAdapter progressAdapter) {
         mShowPattern = PATTERN_PERCENT_SPLICE;
         this.mSpliceAdapter = progressAdapter;
@@ -495,5 +488,140 @@ public class ProgressBar extends View {
         int blueCurrent = (int) (blueStart + fraction * blueDifference);
         int greenCurrent = (int) (greenStart + fraction * greenDifference);
         return Color.argb(alphaCurrent, redCurrent, greenCurrent, blueCurrent);
+    }
+
+    public int getmProgressStartColor() {
+        return mProgressStartColor;
+    }
+
+    public void setmProgressStartColor(int mProgressStartColor) {
+        this.mProgressStartColor = mProgressStartColor;
+        postInvalidate();
+    }
+
+    public int getmProgressMidColor() {
+        return mProgressMidColor;
+    }
+
+    public void setmProgressMidColor(int mProgressMidColor) {
+        this.mProgressMidColor = mProgressMidColor;
+        postInvalidate();
+    }
+
+    public int getmProgressEndColor() {
+        return mProgressEndColor;
+    }
+
+    public void setmProgressEndColor(int mProgressEndColor) {
+        this.mProgressEndColor = mProgressEndColor;
+        postInvalidate();
+    }
+
+    public int getmBgStartColor() {
+        return mBgStartColor;
+    }
+
+    public void setmBgStartColor(int mBgStartColor) {
+        this.mBgStartColor = mBgStartColor;
+        postInvalidate();
+    }
+
+    public int getmBgMidColor() {
+        return mBgMidColor;
+    }
+
+    public void setmBgMidColor(int mBgMidColor) {
+        this.mBgMidColor = mBgMidColor;
+        postInvalidate();
+    }
+
+    public int getmBgEndColor() {
+        return mBgEndColor;
+    }
+
+    public void setmBgEndColor(int mBgEndColor) {
+        this.mBgEndColor = mBgEndColor;
+        postInvalidate();
+    }
+
+    public float getmProgressPercent() {
+        return mProgressPercent;
+    }
+
+    public void setmProgressPercent(float mProgressPercent) {
+        this.mProgressPercent = mProgressPercent;
+        postInvalidate();
+    }
+
+    public float getmProgressWidth() {
+        return mProgressWidth;
+    }
+
+    public void setmProgressWidth(float mProgressWidth) {
+        this.mProgressWidth = mProgressWidth;
+        postInvalidate();
+    }
+
+    public int getmStartAngle() {
+        return mStartAngle;
+    }
+
+    public void setmStartAngle(int mStartAngle) {
+        this.mStartAngle = mStartAngle;
+        postInvalidate();
+    }
+
+    public int getmSweepAngle() {
+        return mSweepAngle;
+    }
+
+    public void setmSweepAngle(int mSweepAngle) {
+        this.mSweepAngle = mSweepAngle;
+        postInvalidate();
+    }
+
+    public boolean ismShowDefaultAnim() {
+        return mShowDefaultAnim;
+    }
+
+    public void setmShowDefaultAnim(boolean mShowDefaultAnim) {
+        this.mShowDefaultAnim = mShowDefaultAnim;
+        postInvalidate();
+    }
+
+    public boolean ismStrokeCap() {
+        return mStrokeCap;
+    }
+
+    public void setmStrokeCap(boolean mStrokeCap) {
+        this.mStrokeCap = mStrokeCap;
+        postInvalidate();
+    }
+
+    public int getmDefaultAllAnimDuration() {
+        return mDefaultAllAnimDuration;
+    }
+
+    public void setmDefaultAllAnimDuration(int mDefaultAllAnimDuration) {
+        this.mDefaultAllAnimDuration = mDefaultAllAnimDuration;
+        postInvalidate();
+    }
+
+    public int getmShowPattern() {
+        return mShowPattern;
+    }
+
+    public void setmShowPattern(int mShowPattern) {
+        this.mShowPattern = mShowPattern;
+        postInvalidate();
+    }
+
+    public int getmCurProgress() {
+        return mCurProgress;
+    }
+
+    public void setmCurProgress(int mCurProgress) {
+        this.mCurProgress = mCurProgress;
+        postInvalidate();
     }
 }

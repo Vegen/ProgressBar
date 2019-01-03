@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
         coverTextWithStyleList.add(text1);
         TextWithStyle text2 = new TextWithStyle("未用：￥20", 14f, 0xFFBBC2CC);
         coverTextWithStyleList.add(text2);
-
         coverProgressBar.setCoverAdapter(new ProgressBarCoverAdapter() {
             @Override
             public List<TextWithStyle> getTextList() {
