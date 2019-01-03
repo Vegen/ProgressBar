@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.vegen.open.library.ProgressBar
+        android:id="@+id/spliceProgressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:showPattern="percentSplice"
+        app:progress_width="8dp"
+        android:layout_centerInParent="true"/>
+
+    <com.vegen.open.library.ProgressBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/coverProgressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:showPattern="percentCover"
+        app:cover_bg_start_color="#F2F5F9"
+        app:cover_end_color="#4FACFE"
+        app:cover_start_color="#4FACFE"
+        app:cover_mid_color="#00F2FE"
+        app:progress_width="8dp"
+        android:layout_centerInParent="true"/>
+
+</LinearLayout>

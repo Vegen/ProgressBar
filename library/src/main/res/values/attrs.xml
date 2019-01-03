@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--流量的圆环-->
+    <declare-styleable name="ProgressBar">
+        <!--进度条显示模式 percentCover（默认）：按百分比上层覆盖下层模式，percentSplice：按百分比色块接拼组合模式-->
+        <attr name="showPattern" format="enum">
+            <enum name="percentCover" value="0"/>
+            <enum name="percentSplice" value="1"/>
+        </attr>
+
+        <!--公共属性-->
+        <!--进度宽度-->
+        <attr name="progress_width" format="dimension" />
+        <!--起始角度-->
+        <attr name="start_angle" format="integer" />
+
+        <!--percentCover 模式特有属性-->
+        <!--进度起始色-->
+        <attr name="cover_start_color" format="color" />
+        <!--进度中间色-->
+        <attr name="cover_mid_color" format="color" />
+        <!--进度结束色-->
+        <attr name="cover_end_color" format="color" />
+        <!--背景起始色-->
+        <attr name="cover_bg_start_color" format="color" />
+        <!--背景中间色-->
+        <attr name="cover_bg_mid_color" format="color" />
+        <!--背景结束色-->
+        <attr name="cover_bg_end_color" format="color" />
+        <!--进度值 介于0-1-->
+        <attr name="cover_percent" format="float" />
+        <!--扫过的角度-->
+        <attr name="cover_sweep_angle" format="integer" />
+        <!--是否圆帽显示-->
+        <attr name="cover_stroke_cap" format="boolean"/>
+
+        <!--percentSplice 模式特有属性-->
+        <!--暂无-->
+
+    </declare-styleable>
+
+</resources>
